@@ -11,6 +11,7 @@ import java.util.Optional;
 @Service
 public class UserService {
 
+    //uses @Autowired to get an automatic instance of UserRepository, and provides simple methods (createUser, getUserById, getUserByEmail, getAllUsers, deleteUser) that the Controller will call later.
     @Autowired
     private UserRepository userRepository;
 
